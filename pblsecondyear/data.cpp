@@ -4,11 +4,11 @@ vector<Location> initializeLocations()
 {
     vector<Location> locations;
 
-    locations.push_back({1, "Gangyal"});
-    locations.push_back({2, "Rajpur Road"});
-    locations.push_back({3, "ISBT"});
-    locations.push_back({4, "Prem Nagar"});
-    locations.push_back({5, "Sahastradhara"});
+    locations.push_back({1, "Rajpur Road"});
+    locations.push_back({2, "Subah Nagar"});
+    locations.push_back({3, "Clock Tower"});
+    locations.push_back({4, "Sahastradhara"});
+    locations.push_back({5, "Prem Nagar"});
 
     return locations;
 }
@@ -31,11 +31,11 @@ vector<Restaurant> initializeRestaurants()
 {
     vector<Restaurant> restaurants;
 
-    restaurants.push_back({1, "Spice Garden", 2, 4.5, 20});
-    restaurants.push_back({2, "Himalayan Bites", 1, 4.3, 15});
-    restaurants.push_back({3, "Pizza Hub", 5, 4.6, 25});
-    restaurants.push_back({4, "Green Bowl", 4, 4.2, 18});
-    restaurants.push_back({5, "Food Junction", 3, 4.4, 22});
+    restaurants.push_back({1, "Food Paradise", 2, 4.5, 20});
+    restaurants.push_back({2, "The Food Juction", 1, 4.3, 15});
+    restaurants.push_back({3, "Urban Bites", 5, 4.6, 25});
+    restaurants.push_back({4, "Royal Kitchen", 4, 4.2, 18});
+    restaurants.push_back({5, "Flavour Town", 3, 4.4, 22});
 
     return restaurants;
 }
@@ -58,11 +58,11 @@ vector<Cuisine> initializeCuisines()
     vector<Cuisine> cuisines;
 
     cuisines.push_back({1, "Indian"});
-    cuisines.push_back({2, "Chinese"});
-    cuisines.push_back({3, "Italian"});
-    cuisines.push_back({4, "Mexican"});
-    cuisines.push_back({5, "South Indian"});
-    cuisines.push_back({6, "Fast Food"});
+    cuisines.push_back({2, "Italian"});
+    cuisines.push_back({3, "Mexican"});
+    cuisines.push_back({4, "Chinese"});
+    cuisines.push_back({5, "Fast Food"});
+    cuisines.push_back({6, "South Indian"});
 
     return cuisines;
 }
@@ -87,40 +87,40 @@ vector<Dish> initializeDishes()
     vector<Dish> dishes;
 
     // Indian
-    dishes.push_back({1, "Butter Chicken", 1, 250, false});
+    dishes.push_back({1, "Dal Makhani", 1, 250, false});
     dishes.push_back({2, "Paneer Tikka", 1, 180, true});
-    dishes.push_back({3, "Dal Makhani", 1, 160, true});
+    dishes.push_back({3, "Rajma Chawal", 1, 160, true});
     dishes.push_back({4, "Biryani", 1, 220, false});
 
-    // Chinese
-    dishes.push_back({5, "Hakka Noodles", 2, 150, true});
-    dishes.push_back({6, "Fried Rice", 2, 160, true});
+    //Italian
+    dishes.push_back({5, "Pasta Alfredo", 2, 150, true});
+    dishes.push_back({6, "Margherita Pizza", 2, 160, true});
     dishes.push_back({7, "Manchurian", 2, 170, true});
-    dishes.push_back({8, "Spring Rolls", 2, 140, true});
-
-    // Italian
-    dishes.push_back({9, "Margherita Pizza", 3, 220, true});
-    dishes.push_back({10, "Pasta Alfredo", 3, 200, true});
-    dishes.push_back({11, "Garlic Bread", 3, 120, true});
-    dishes.push_back({12, "Lasagna", 3, 250, true});
+    dishes.push_back({8, "Garlic Bread", 2, 140, true});
 
     // Mexican
-    dishes.push_back({13, "Veg Tacos", 4, 160, true});
-    dishes.push_back({14, "Burrito", 4, 180, true});
-    dishes.push_back({15, "Nachos", 4, 140, true});
-    dishes.push_back({16, "Quesadilla", 4, 170, true});
+    dishes.push_back({9, "Nachos", 3, 220, true});
+    dishes.push_back({10, "Burrito", 3, 200, true});
+    dishes.push_back({11, "Quesadilla", 3, 120, true});
+    dishes.push_back({12, "Veg Taco", 3, 250, true});
 
-    // South Indian
-    dishes.push_back({17, "Masala Dosa", 5, 120, true});
-    dishes.push_back({18, "Idli Sambar", 5, 100, true});
-    dishes.push_back({19, "Vada", 5, 90, true});
-    dishes.push_back({20, "Uttapam", 5, 110, true});
+    // Chinese
+    dishes.push_back({13, "Spring Rolls", 4, 160, true});
+    dishes.push_back({14, "Fried Rice", 4, 180, true});
+    dishes.push_back({15, "Chilli Paneer", 4, 140, true});
+    dishes.push_back({16, "Momos", 4, 170, true});
 
     // Fast Food
-    dishes.push_back({21, "Burger", 6, 150, false});
-    dishes.push_back({22, "French Fries", 6, 100, true});
-    dishes.push_back({23, "Momos", 6, 130, true});
-    dishes.push_back({24, "Sandwich", 6, 120, true});
+    dishes.push_back({17, "Burger", 5, 120, true});
+    dishes.push_back({18, "Momos", 5, 100, true});
+    dishes.push_back({19, "Sandwich", 5, 90, true});
+    dishes.push_back({20, "French Fries", 5, 110, true});
+
+    // South Indian
+    dishes.push_back({21, "Idli", 6, 150, false});
+    dishes.push_back({22, "Masala Dosa", 6, 100, true});
+    dishes.push_back({23, "Paneer Dosa", 6, 130, true});
+    dishes.push_back({24, "Rava Dosa", 6, 120, true});
 
     return dishes;
 }
@@ -145,44 +145,44 @@ vector<Menu> initializeMenus()
 {
     vector<Menu> menus;
 
-    // Spice Garden
-    menus.push_back({1, 1});  // Butter Chicken
-    menus.push_back({1, 2});  // Paneer Tikka
-    menus.push_back({1, 3});  // Dal Makhani
-    menus.push_back({1, 5});  // Hakka Noodles
-    menus.push_back({1, 7});  // Manchurian
-    menus.push_back({1, 17}); // Masala Dosa
+    // Food Paradise
+    menus.push_back({1, 1});  
+    menus.push_back({1, 2});  
+    menus.push_back({1, 3});  
+    menus.push_back({1, 5});  
+    menus.push_back({1, 7});  
+    menus.push_back({1, 17}); 
 
-    // Himalayan Bites
-    menus.push_back({2, 1});  // Butter Chicken
-    menus.push_back({2, 2});  // Paneer Tikka
-    menus.push_back({2, 4});  // Biryani
-    menus.push_back({2, 6});  // Fried Rice
-    menus.push_back({2, 8});  // Spring Rolls
+    // The Food Juction
+    menus.push_back({2, 1});  
+    menus.push_back({2, 2});  
+    menus.push_back({2, 4});  
+    menus.push_back({2, 6});  
+    menus.push_back({2, 8});  
 
-    // Pizza Hub
-    menus.push_back({3, 9});  // Margherita Pizza
-    menus.push_back({3, 10}); // Pasta Alfredo
-    menus.push_back({3, 11}); // Garlic Bread
-    menus.push_back({3, 12}); // Lasagna
-    menus.push_back({3, 21}); // Burger
-    menus.push_back({3, 22}); // French Fries
+    // Urban Bites
+    menus.push_back({3, 9});  
+    menus.push_back({3, 10}); 
+    menus.push_back({3, 11}); 
+    menus.push_back({3, 12}); 
+    menus.push_back({3, 21}); 
+    menus.push_back({3, 22}); 
 
-    // Green Bowl
-    menus.push_back({4, 2});  // Paneer Tikka
-    menus.push_back({4, 3});  // Dal Makhani
-    menus.push_back({4, 6});  // Fried Rice
-    menus.push_back({4, 8});  // Spring Rolls
-    menus.push_back({4, 13}); // Veg Tacos
-    menus.push_back({4, 15}); // Nachos
+    // Royal Kitchen
+    menus.push_back({4, 2});  
+    menus.push_back({4, 3}); 
+    menus.push_back({4, 6});  
+    menus.push_back({4, 8}); 
+    menus.push_back({4, 13}); 
+    menus.push_back({4, 15}); 
 
-    // Food Junction
-    menus.push_back({5, 17}); // Masala Dosa
-    menus.push_back({5, 18}); // Idli Sambar
-    menus.push_back({5, 20}); // Uttapam
-    menus.push_back({5, 21}); // Burger
-    menus.push_back({5, 23}); // Momos
-    menus.push_back({5, 24}); // Sandwich
+    // Flavour Town
+    menus.push_back({5, 17}); 
+    menus.push_back({5, 18}); 
+    menus.push_back({5, 20}); 
+    menus.push_back({5, 21}); 
+    menus.push_back({5, 23}); 
+    menus.push_back({5, 24}); 
 
     return menus;
 }
