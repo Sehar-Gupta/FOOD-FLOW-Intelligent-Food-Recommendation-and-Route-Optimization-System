@@ -4,7 +4,7 @@ vector<Location> initializeLocations()
 {
     vector<Location> locations;
 
-    locations.push_back({1, "Clock Tower"});
+    locations.push_back({1, "Gangyal"});
     locations.push_back({2, "Rajpur Road"});
     locations.push_back({3, "ISBT"});
     locations.push_back({4, "Prem Nagar"});
